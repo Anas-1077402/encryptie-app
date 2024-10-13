@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptie/decryptie applicatie</title>
+</head>
+<body>
+    <h1>Simpel Encrypt/Decrypt</h1>
+    
+    <label for="plaintext">Invoer Tekst:</label><br>
+    <textarea id="plaintext" rows="4" cols="50"></textarea><br><br>
+
+    <label for="key">Sleutel:</label><br>
+    <input type="text" id="key"><br><br>
+
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button><br><br>
+
+    <h2>Resultaat:</h2>
+    <textarea id="result" rows="4" cols="50"></textarea>
+</body>
+</html>
