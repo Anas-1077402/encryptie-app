@@ -28,5 +28,12 @@
         var encrypted = CryptoJS.AES.encrypt(plaintext, key).toString();
         document.getElementById("result").value = encrypted;
     }
+    function decrypt() {
+            var encryptedText = document.getElementById("plaintext").value;
+            var key = document.getElementById("key").value;
+            var decrypted = CryptoJS.AES.decrypt(encryptedText, key);
+            var plaintext = decrypted.toString(CryptoJS.enc.Utf8);
+            document.getElementById("result").value = plaintext;
+    }
 </script>
 </html>
